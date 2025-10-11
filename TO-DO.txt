@@ -1,0 +1,86 @@
+=====================================
+Ultimate Tic-Tac-Toe - TO-DO List
+=====================================
+
+Project: Ultimate Tic-Tac-Toe with CSP & AI Solvers
+Author: Nouman Hafeez (@noumanic)
+Email: noumanhafeez.nh11@gmail.com
+Last Updated: October 2025
+
+=====================================
+GAME RULES REFERENCE
+=====================================
+
+Ultimate Tic-Tac-Toe is a strategic extension of classic Tic-Tac-Toe, played on a 3×3 grid of
+smaller 3×3 Tic-Tac-Toe boards. The objective is to win three small boards in a row (horizontally,
+vertically, or diagonally) on the larger board.
+
+Rules:
+• The game begins with an empty 3×3 grid of smaller Tic-Tac-Toe boards
+• Players take turns marking a spot ('X' or 'O') on a small board
+• The active small board for the next move is determined by the position of the last move:
+  - If a player places a mark in position (r, c) of a small board, their opponent must play 
+    in the (r, c) small board of the large grid
+  - If the targeted small board is already won or full, the player can move to any empty position
+• A player wins a small board by forming a horizontal, vertical, or diagonal sequence
+• A player wins the game by winning three small boards in a row
+
+=====================================
+COMPLETED TASKS ✓
+=====================================
+
+[✓] Task 1: Constraint Formulation
+    - CSP representation with variables, domains, and constraints
+    - Variables: All possible moves on 3×3 small boards (big_row, big_col, small_row, small_col)
+    - Domains: Available moves ('X', 'O', or empty)
+    - Constraints implemented:
+      * Valid moves following active small board rule
+      * Occupancy constraint (no marking occupied positions)
+      * Winning conditions for small and large boards
+      * Blocked moves on won small boards
+      * Sequential move constraints
+
+[✓] Task 2: CSP Solver Implementation
+    - Backtracking Search algorithm
+    - Forward Checking to eliminate illegal moves early
+    - Arc Consistency (AC-3) algorithm for valid board states
+    - Optimal move selection following CSP formulation
+    - Opponent blocking logic
+    - Strategic move evaluation
+
+[✓] Task 3: Experimentation & Analysis
+    - Human vs AI gameplay mode
+    - MRV (Minimum Remaining Values) heuristic implemented
+    - Degree heuristic for tie-breaking
+    - Least Constraining Value heuristic
+    - Minimax AI with Alpha-Beta Pruning
+    - Hybrid CSP-Minimax AI solver
+    - Performance comparison capabilities
+
+[✓] Core Game Implementation
+    - Game logic and state management
+    - Move validation system
+    - Win detection for small and big boards
+    - Active board tracking and highlighting
+
+[✓] GUI Implementation
+    - Tkinter-based graphical interface (800x850)
+    - Visual board rendering
+    - Active board highlighting (green)
+    - Color-coded won boards (Red for X, Blue for O, Gray for Tie)
+    - AI opponent selection dropdown
+    - New game functionality
+    - Status display with active board information
+
+[✓] AI Algorithms
+    - CSP Solver with Backtracking
+    - Minimax AI (depth=3)
+    - Hybrid CSP-Minimax AI (recommended)
+    - Strategic evaluation functions
+    - Alpha-Beta Pruning optimization
+
+[✓] Documentation
+    - Comprehensive README.md
+    - Screenshots of all game modes
+    - GitHub repository setup
+    - Code comments and docstrings
