@@ -1,0 +1,20 @@
+# Ultimate Tic-Tac-Toe with CSP & AI Solvers
+# Requirements file
+
+# Python Standard Library modules used:
+# - tkinter (GUI framework - included with Python)
+# - copy (deep copying game states)
+# - time (timing and delays)
+# - random (random selections if needed)
+# - collections.defaultdict (efficient constraint storage)
+# - heapq (priority queue operations)
+
+# No external dependencies required!
+# This project uses only Python standard library.
+
+# Minimum Python version: 3.7+
+
+# Optional development dependencies:
+# pytest>=7.0.0  # For unit testing (future enhancement)
+# black>=22.0.0  # For code formatting (future enhancement)
+# pylint>=2.12.0  # For code linting (future enhancement)
