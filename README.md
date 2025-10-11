@@ -25,7 +25,7 @@ Ultimate Tic-Tac-Toe is a strategic variant of the classic game, played on a 3×
 ![Minimax AI](screenshots/minmax-ai.png)
 
 ### CSP-Minimax Hybrid AI Mode
-![CSP-Minimax Hybrid](screenshots/csp-minmax-hubrid-ai.png)
+![CSP-Minimax Hybrid](screenshots/csp-minmax-hybrid-ai.png)
 
 ## 🤖 AI Implementations
 
